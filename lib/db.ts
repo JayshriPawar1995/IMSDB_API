@@ -1,7 +1,3 @@
-// lib/db.ts
-export default pool; 
-
-
 import mysql from "mysql2/promise";
 
 const pool = mysql.createPool({
