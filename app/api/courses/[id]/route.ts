@@ -66,10 +66,10 @@ export async function DELETE(req: Request, { params }: { params: { id: string } 
 // GET single course by ID
 export async function GET(req: Request, { params }: { params: { id: string } }) {
   try {
-    const user = getUserFromToken(req as any);
-    if (!user) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
+    //const user = getUserFromToken(req as any);
+    // if (!user) {
+    //   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    // }
 
     const courseId = params.id;
 
