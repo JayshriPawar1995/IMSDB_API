@@ -25,7 +25,7 @@ export async function POST(req: Request) {
   try {
     const formData = await req.formData();
     const name = formData.get("name") as string;
-    const courseId = parseInt(formData.get("courseId") as string);
+    const courseId = parseInt(formData.get("course_id") as string);
     const file = formData.get("template") as File;
 
     if (!name || !courseId || !file) {
